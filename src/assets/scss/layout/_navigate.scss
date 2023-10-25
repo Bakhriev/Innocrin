@@ -29,6 +29,8 @@
 	&__top {
 		display: flex;
 		justify-content: center;
+		flex-wrap: wrap;
+		gap: 40px;
 		padding-bottom: 30px;
 		border-bottom: 1px solid #2b60ae;
 	}
@@ -37,16 +39,18 @@
 
 	&__menu {
 		align-items: center;
-		li {
-			border-radius: 24px;
-			background-color: rgba(255, 255, 255, 0.1);
-			@include hover {
-				background-color: #0a3474;
-			}
-			a {
-				@media screen and (max-width: 992px) {
-					font-size: 14px;
-				}
+	}
+}
+.menu-secondary {
+	li {
+		border-radius: 24px;
+		background-color: rgba(255, 255, 255, 0.1);
+		@include hover {
+			background-color: #0a3474;
+		}
+		a {
+			@media screen and (max-width: 992px) {
+				font-size: 14px;
 			}
 		}
 	}
