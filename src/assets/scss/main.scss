@@ -19,3 +19,32 @@
 @import './layout/hero';
 @import './layout/navigate';
 @import './layout/footer';
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.text-box {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-bottom: 12px;
+	}
+	&__title {
+		margin-bottom: 12px;
+		color: var(--title);
+		font-family: Hind;
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 150%;
+	}
+}
