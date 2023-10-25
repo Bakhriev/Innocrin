@@ -1,0 +1,66 @@
+.menu {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 8px 16px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu > li {
+	position: relative;
+	border-radius: 24px;
+	transition: background-color 300ms ease;
+}
+
+.menu > li > a {
+	position: relative;
+	z-index: 1;
+
+	display: block;
+	padding: 13px 24px;
+
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 150%;
+	text-decoration: none;
+	transition: color 300ms ease;
+
+	cursor: pointer;
+}
+
+.menu .menu-item-primary {
+	border: 2px solid var(--red);
+	& > a {
+		color: var(--red);
+	}
+
+	@include hover {
+		background-color: var(--red);
+		& > a {
+			color: #fff;
+		}
+	}
+	&:active {
+		background-color: var(--red);
+	}
+}
+.menu .menu-item-secondary {
+	border: 2px solid var(--blue);
+	& > a {
+		color: var(--blue);
+	}
+
+	@include hover {
+		background-color: var(--blue);
+		& > a {
+			color: #fff;
+		}
+	}
+	&:active {
+		background-color: var(--blue);
+	}
+}

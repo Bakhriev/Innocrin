@@ -1,6 +1,7 @@
 body {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	font-family: 'Segoe UI', sans-serif;
+	color: var(--body-text);
+	font-family: Montserrat;
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -21,7 +22,14 @@ body {
 .container {
 	margin: 0 auto;
 
-	max-width: 1430px;
+	max-width: 1390px;
+	padding: 0 15px;
+}
+
+.container-sm {
+	margin: 0 auto;
+
+	max-width: 1150px;
 	padding: 0 15px;
 }
 
@@ -74,4 +82,39 @@ body {
 .logo {
 	display: block;
 	flex-shrink: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	color: var(--title);
+}
+h1 {
+	font-size: 52px;
+	line-height: 120%;
+}
+h2 {
+	font-size: 40px;
+	line-height: 150%;
+}
+
+h3 {
+	font-size: 36px;
+	line-height: 150%;
+}
+h4 {
+	font-size: 30px;
+	line-height: 133%;
+}
+
+h5 {
+	font-size: 26px;
+	line-height: 150%;
+}
+h6 {
+	font-size: 20px;
+	line-height: 150%;
 }

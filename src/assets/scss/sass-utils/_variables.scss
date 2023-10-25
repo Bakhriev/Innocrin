@@ -13,3 +13,14 @@ $mobileMenuIndex: 3;
 $overlayIndex: 2;
 
 // Colors
+:root {
+	--body-text: #32666d;
+	--red: #f80059;
+	--blue: #1952a7;
+	--title: #2b2b2b;
+	--gradient-bg: linear-gradient(
+		40deg,
+		rgba(219, 241, 251, 1) 50%,
+		rgba(248, 200, 236, 1) 80%
+	);
+}

@@ -1,0 +1,84 @@
+.hero {
+	position: relative;
+	padding-top: 176px;
+	padding-bottom: 205px;
+
+	background: var(--gradient-bg);
+
+	@media screen and (max-width: 1200px) {
+		padding-top: 120px;
+		padding-bottom: 60px;
+	}
+
+	&::after {
+		@media screen and (max-width: 1200px) {
+			display: none;
+		}
+		content: '';
+		position: absolute;
+		top: -2px;
+		right: -30px;
+		width: 828px;
+		height: 751px;
+		background-image: url(../img/mask.png);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	// .hero__container
+
+	&__container {
+		position: relative;
+		z-index: 1;
+	}
+
+	// .hero__info
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 48px;
+		max-width: 830px;
+		@media screen and (max-width: 1200px) {
+			margin: 0 auto;
+			gap: 24px;
+		}
+	}
+
+	// .hero__title
+
+	&__title {
+		color: var(--title);
+		font-family: Hind;
+		font-size: 50px;
+		font-weight: 700;
+		line-height: 120%;
+		@media screen and (max-width: 992px) {
+			font-size: 36px;
+		}
+		@media screen and (max-width: 768px) {
+			font-size: 28px;
+		}
+		span {
+			color: var(--red);
+		}
+	}
+
+	&__label {
+		color: var(--title);
+		font-family: Hind;
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 150%;
+		@media screen and (max-width: 992px) {
+			font-size: 26px;
+		}
+	}
+}
+
+.info-box {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
