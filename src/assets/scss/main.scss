@@ -26,6 +26,10 @@
 	gap: 32px;
 	padding-top: 100px;
 	padding-bottom: 100px;
+	@media screen and (max-width: 992px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 }
 
 .text-box {
