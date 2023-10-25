@@ -152,3 +152,12 @@ h6 {
 		font-size: 18px;
 	}
 }
+.space-between {
+	justify-content: space-between;
+}
+.inner-hero {
+	padding: 162px 0 32px 0 !important;
+	&::after {
+		display: none;
+	}
+}
