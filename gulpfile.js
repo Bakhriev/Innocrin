@@ -85,18 +85,15 @@ function cssMinify() {
 		.pipe(sass())
 		.pipe(gcmq())
 		.pipe(
-			cleanCss({
-				level: 2,
+			autoprefixer({
+				cascade: false,
 			})
 		)
 		.pipe(dest(path.build.css))
 }
 
 function jsMinify() {
-	return src(path.src.js)
-		.pipe(webpack(require('./webpack.config')))
-		.pipe(uglify())
-		.pipe(dest(path.build.js))
+	return src(path.src.js).pipe(uglify()).pipe(dest(path.build.js))
 }
 
 function imgMinify() {
@@ -153,7 +150,6 @@ function js() {
 				},
 			})
 		)
-		.pipe(webpack(require('./webpack.config')))
 		.pipe(dest(path.build.js))
 		.pipe(browserSync.reload({stream: true}))
 }
