@@ -83,6 +83,9 @@ body {
 .logo {
 	display: block;
 	flex-shrink: 0;
+	img {
+		display: block;
+	}
 }
 h1,
 h2,
