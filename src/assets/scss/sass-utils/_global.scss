@@ -165,3 +165,33 @@ h6 {
 		display: none;
 	}
 }
+
+.inner-header {
+	.mobile-menu {
+		@media screen and (max-width: 1200px) {
+			display: flex;
+			flex-direction: column;
+
+			position: fixed;
+			right: 0;
+			top: 0;
+
+			max-width: 320px;
+			min-width: 300px;
+
+			width: 100%;
+			height: 100%;
+			padding: 70px 15px 20px 15px;
+
+			overflow-y: auto;
+			overflow-x: hidden;
+
+			z-index: $mobileMenuIndex;
+
+			transform: translateX(100%);
+			transition: transform 250ms ease-in-out;
+
+			background-color: #fff;
+		}
+	}
+}
