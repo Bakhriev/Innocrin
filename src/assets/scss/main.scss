@@ -35,13 +35,15 @@
 .pt-80 {
 	padding-top: 80px;
 }
-b {
-	color: #f80059;
-	font-family: Montserrat;
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 150%;
-	text-decoration-line: underline;
+p {
+	a {
+		color: #f80059;
+		font-family: Montserrat;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 150%;
+		text-decoration-line: underline;
+	}
 }
 
 .text-box {
@@ -73,13 +75,15 @@ b {
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
+		padding: 24px 0;
+
 		li {
 			position: relative;
 
 			&::before {
 				content: '';
 				position: absolute;
-				top: 4px;
+				top: 10px;
 				left: 0;
 				width: 20px;
 				height: 10px;
@@ -105,12 +109,13 @@ b {
 		margin: 0;
 		padding: 0;
 		counter-reset: section;
+		padding: 24px 0;
 		li {
 			position: relative;
 			&::before {
 				content: counter(section);
 				position: absolute;
-				top: 0;
+				top: 4px;
 				left: 0;
 				width: 20px;
 				height: 20px;

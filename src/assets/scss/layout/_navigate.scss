@@ -82,21 +82,9 @@
 	background: #104087;
 	margin: 0 auto;
 }
+
 .form-field {
 	position: relative;
-	&::after {
-		content: '';
-		position: absolute;
-		top: 50%;
-		right: 0;
-		transform: translateY(-50%);
-		width: 32px;
-		height: 32px;
-		background-image: url('../img/search.svg');
-		background-position: center center;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
 	border-bottom: 2px solid rgba(255, 255, 255, 0.8);
 	@media screen and (max-width: 992px) {
 		border: none;
@@ -197,4 +185,21 @@
 	svg {
 		stroke: var(--red);
 	}
+}
+
+.search-btn {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background-image: url('../img/search.svg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
 }

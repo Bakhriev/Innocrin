@@ -4,6 +4,14 @@
 	z-index: $overlayIndex;
 	padding: 20px 0;
 
+	&__menu {
+		li {
+			a {
+				font-weight: 600;
+			}
+		}
+	}
+
 	&__nav {
 		margin-left: 330px;
 		@media screen and (max-width: 992px) {

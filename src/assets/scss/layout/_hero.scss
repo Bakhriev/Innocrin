@@ -20,6 +20,14 @@
 		right: -30px;
 		width: 828px;
 		height: 751px;
+		@media screen and (max-width: 1800px) {
+			width: 600px;
+			height: 600px;
+		}
+		@media screen and (max-width: 1450px) {
+			width: 500px;
+			height: 500px;
+		}
 		background-image: url(../img/mask.png);
 		background-position: center center;
 		background-size: cover;
